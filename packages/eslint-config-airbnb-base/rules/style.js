@@ -6,7 +6,7 @@ module.exports = {
 
     // enforce line breaks between array elements
     // https://eslint.org/docs/rules/array-element-newline
-    'array-element-newline': ['error', { multiline: true, minItems: null }],
+    'array-element-newline': ['error', 'always'],
 
     // enforce spacing inside array brackets
     'array-bracket-spacing': ['error', 'never'],
