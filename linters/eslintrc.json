@@ -1706,5 +1706,15 @@
         ]
       }
     ]
+  },
+  "parser": "babel-eslint",
+  "overrides": {
+    "files": [
+      "*.test.js",
+      "**/setupTets.js"
+    ],
+    "env": {
+      "jest": true
+    }
   }
 }
