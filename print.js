@@ -9,6 +9,8 @@ const imports = require('./packages/eslint-config-airbnb-base/rules/imports');
 const strict = require('./packages/eslint-config-airbnb-base/rules/strict');
 const react = require('./packages/eslint-config-airbnb/rules/react');
 const reactA11y = require('./packages/eslint-config-airbnb/rules/react-a11y');
+const jest = require('./eslint-config-slice/rules/jest');
+const babel = require('./eslint-config-slice/rules/babel');
 
 const customizer = (objValue, srcValue) => {
   if (_.isArray(objValue)) {
@@ -20,6 +22,8 @@ const rules = _.mergeWith(
   imports,
   bestPractices,
   errors,
+  babel,
+  jest,
   node,
   style,
   variables,
